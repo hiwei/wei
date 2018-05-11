@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My1</title>
+  <title>Chen Wei's Works</title>
   <base href="/">
+  <script src="assets/js/jquery.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -12,3 +13,20 @@
   <app-root></app-root>
 </body>
 </html>
+
+
+<script>
+  $(document).ready(function() {
+    var categoryTop = ['cate0', 'cate1', 'cate2', 'cate3'];
+    for(var c=0; c < $('.categoryLine').length; c++) {
+      categoryTop[c] = $('#category-' + c).offset().top - 50;
+    }
+    $('.categoryLine').click(function() {
+      var cate = $(this).data('cate');
+      $('html, body').animate({ scrollTop: categoryTop[cate] }, 500);
+    });
+    $('.item').click(function() {
+      $('html, body').animate({ scrollTop: 0 }, 500);
+    });
+  })
+</script>

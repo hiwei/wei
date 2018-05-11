@@ -1,0 +1,78 @@
+<body (scroll)="scroll()">
+
+  <a routerLink="/home" id="wei">C he n<br/>W ei 's</a>
+
+  <div id="main">
+    <section id="header">
+      <div id="categoryLine-box">
+        <div [style.top]="categoryLineStyle" id="categoryLine-box-line"></div>
+        <div class="categoryLine" data-cate="0"></div>
+        <div class="categoryLine" data-cate="1"></div>
+        <div class="categoryLine" data-cate="2"></div>
+        <div class="categoryLine" data-cate="3"></div>
+      </div>
+      <div (click)="goHome()" id="closePage" (click)="closeItem()">╳</div>
+    </section>
+
+    <section id="content">
+
+      <div id="routeContainer" *ngIf="showItem" [@flyInOut]>
+        
+        <router-outlet></router-outlet>
+      </div>
+      
+      <div id="open-page-effect" class="page-effect"></div>
+      <div id="close-page-effect" class="page-effect"></div>
+      <div id="clickItemBan"></div>
+      <!--WEB-->
+      <div id="category-0">
+        <p class="category-title">Websites</p>
+        <div class="item-box" *ngFor="let web of webs">
+          <a [routerLink]="web.webLink" (click)="openItem()">
+            <div class="item">
+              <div class="item-name">{{web.webTitle}}</div>
+              <img [src]="web.webCover" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="category-1">
+        <p class="category-title">Projects</p>
+        <div class="item-box" *ngFor="let project of projects">
+          <a [routerLink]="project.projectLink" (click)="openItem()">
+            <div class="item">
+              <div class="item-name">{{project.projectTitle}}</div>
+              <img [src]="project.projectCover" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="category-2">
+        <p class="category-title">UI Design</p>
+        <div class="item-box" *ngFor="let ui of uis">
+          <a [routerLink]="ui.uiLink" (click)="openItem()">
+            <div class="item">
+              <div class="item-name">{{ui.uiTitle}}</div>
+              <img [src]="ui.uiCover" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="category-3">
+        <p class="category-title">Other</p>
+        <div class="item-box" *ngFor="let other of others">
+          <a [routerLink]="other.otherLink" (click)="openItem()">
+            <div class="item">
+              <div class="item-name">{{other.otherTitle}}</div>
+              <img [src]="other.otherCover" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</body>
