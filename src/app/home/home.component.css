@@ -23,7 +23,6 @@
     position: relative;
     width: 1000px;
     padding-bottom: 400px;
-    margin-left: 500px;
 }
 #routeContainer {
     z-index: 1;
@@ -160,5 +159,333 @@
     }
     to {
         opacity: 0;
+    }
+}
+
+
+/* RWD */
+@media screen and (min-width: 1681px) {
+    #content {
+        margin-left: 500px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1680px) {
+
+    #wei {
+        font-size: 120pt;
+        line-height: 95pt;
+        left: 70px;
+    }
+    #main {
+        width: 1200px;
+    }
+    #content {
+        width: 850px;
+        margin-left: 400px;
+    }
+    .item {
+        width: 250px;
+        height: 250px;
+    }
+    .category-title {
+        font-size: 28pt;
+    }
+    #categoryLine-box {
+        top: 480px;
+        left: 425px;
+    }
+    #closePage {
+        top: 480px;
+        left: 350px;
+        width: 120px;
+        line-height: 120px;
+        font-size: 54pt;
+    }
+    @keyframes fromBtoT {
+        from {
+            opacity: 0;
+            top: 530px;
+        }
+        to {
+            opacity: 1;
+            top: 480px;
+        }
+    }
+}
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    #wei {
+        font-size: 100pt;
+        line-height: 80pt;
+        left: 60px;
+    }
+    #main {
+        width: 1000px;
+    }
+    #content {
+        width: 750px;
+        margin-left: 320px;
+    }
+    .item {
+        width: 230px;
+        height: 230px;
+        margin: 10px;
+    }
+    .category-title {
+        font-size: 26pt;
+    }
+    #categoryLine-box {
+        top: 450px;
+        left: 350px;
+    }
+    #closePage {
+        top: 450px;
+        left: 280px;
+        width: 120px;
+        line-height: 120px;
+        font-size: 50pt;
+    }
+    @keyframes fromBtoT {
+        from {
+            opacity: 0;
+            top: 500px;
+        }
+        to {
+            opacity: 1;
+            top: 450px;
+        }
+    }
+    @keyframes fromTtoB {
+        from {
+            opacity: 0;
+            top: 0;
+        }
+        to {
+            opacity: 1;
+            top: 50px;
+        }
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    #wei {
+        font-size: 80pt;
+        line-height: 60pt;
+        left: 50px;
+    }
+    #main {
+        width: 1000px;
+    }
+    #content {
+        width: 600px;
+        margin-left: 350px;
+    }
+    .item {
+        width: 280px;
+        height: 280px;
+        margin: 10px;
+    }
+    .category-title {
+        font-size: 24pt;
+    }
+    #categoryLine-box {
+        top: 450px;
+        left: 190px;
+    }
+    #closePage {
+        top: 450px;
+        left: 130px;
+        width: 100px;
+        line-height: 150px;
+        font-size: 40pt;
+    }
+    @keyframes fromBtoT {
+        from {
+            opacity: 0;
+            top: 500px;
+        }
+        to {
+            opacity: 1;
+            top: 450px;
+        }
+    }
+    @keyframes fromTtoB {
+        from {
+            opacity: 0;
+            top: 0;
+        }
+        to {
+            opacity: 1;
+            top: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    #wei {
+        font-size: 80pt;
+        line-height: 60pt;
+        left: 50px;
+    }
+    #main {
+        width: 1000px;
+    }
+    #content {
+        width: 600px;
+        margin-left: 350px;
+    }
+    .item {
+        width: 280px;
+        height: 280px;
+        margin: 10px;
+    }
+    .category-title {
+        font-size: 24pt;
+    }
+    #categoryLine-box {
+        top: 450px;
+        left: 190px;
+    }
+    #closePage {
+        top: 450px;
+        left: 130px;
+        width: 100px;
+        line-height: 150px;
+        font-size: 40pt;
+    }
+    @keyframes fromBtoT {
+        from {
+            opacity: 0;
+            top: 500px;
+        }
+        to {
+            opacity: 1;
+            top: 450px;
+        }
+    }
+    @keyframes fromTtoB {
+        from {
+            opacity: 0;
+            top: 0;
+        }
+        to {
+            opacity: 1;
+            top: 50px;
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    #wei {
+        z-index: 99;
+        position: fixed;
+        left: 40px;
+        font-size: 50pt;
+        line-height: 100px;
+        animation: none;
+    }
+    #wei br {
+        display: none;
+    }
+    #main {
+        width: 90%;
+    }
+    #header {
+        z-index: 99;
+        position: relative;
+        position: fixed;
+        clear: left;
+        top: 0;
+        width: 90%;
+        height: 100px;
+        background: #FFF;
+    }
+    #content {
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    #categoryLine-box {
+        position: absolute;
+        top: 50px;
+        left: auto;
+        right: 30px;
+        width: 200px;
+        height: 3px;
+        text-align: left;
+        animation: fromRtoL30 1s 1s forwards;
+    }
+    #categoryLine-box-line {
+        margin-top: -1px;
+        left: 0;
+        width: 50px;
+        height: 5px;
+        transition: left 0.5s;
+    }
+    
+    .category-title {
+        font-size: 20pt;
+    }
+    .categoryLine {
+        display: inline-block;
+        margin-top: -20px;
+        margin-left: -4px;
+        width: 50px;
+        height: 40px;
+    }
+    .item {
+        width: 41.5vw;
+        height: 41.5vw;
+        margin: 1vw;
+    }
+    #closePage {
+        z-index: 100;
+        top: 25px;
+        left: auto;
+        right: 80px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 30pt;
+        animation: fromRtoL80 1s 1s forwards;
+    }
+    
+    @keyframes fromRtoL30 {
+        from {
+            opacity: 0;
+            right: 0px;
+        }
+        to {
+            opacity: 1;
+            right: 30px;
+        }
+    }
+    @keyframes fromRtoL80 {
+        from {
+            opacity: 0;
+            right: 50px;
+        }
+        to {
+            opacity: 1;
+            right: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+    #wei {
+        font-size: 40pt;
+    }
+}
+@media screen and (min-width: 361px) and (max-width: 640px) {
+    #wei {
+        font-size: 30pt;
+    }
+    .item {
+        width: 41vw;
+        height: 41vw;
+        margin: 1vw;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    #wei {
+        font-size: 30pt;
     }
 }

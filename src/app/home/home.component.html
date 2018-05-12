@@ -1,11 +1,11 @@
 <body (scroll)="scroll()">
 
-  <a routerLink="/home" id="wei">C he n<br/>W ei 's</a>
+  <div id="wei">C he n <br/>W ei 's</div>
 
   <div id="main">
     <section id="header">
       <div id="categoryLine-box">
-        <div [style.top]="categoryLineStyle" id="categoryLine-box-line"></div>
+        <div [style.top]="categoryLineStyleTop" [style.left]="categoryLineStyleLeft" id="categoryLine-box-line"></div>
         <div class="categoryLine" data-cate="0"></div>
         <div class="categoryLine" data-cate="1"></div>
         <div class="categoryLine" data-cate="2"></div>

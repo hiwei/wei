@@ -73,9 +73,14 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  categoryLineStyle;
+  categoryLineStyleTop;
+  categoryLineStyleLeft;
   clickCategory(categoryIndex: number) {
-    this.categoryLineStyle = 50*categoryIndex + 'px';
+    if($(window).width() > 1024) {
+      this.categoryLineStyleTop = 50*categoryIndex + 'px';
+    } else {
+      this.categoryLineStyleLeft = 50*categoryIndex + 'px';
+    }
   }
 
   public webs = [

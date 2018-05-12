@@ -27,7 +27,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1000px;
 }
 .item-page {
     z-index: 1;
@@ -107,5 +106,90 @@ video {
     }
     to {
         opacity: 1;
+    }
+}
+
+
+/* RWD */
+@media screen and (min-width: 1441px) and (max-width: 1680px) {
+
+    .item-page {
+        width: 690px;
+        padding: 0 80px 200px 80px;
+    }
+    .item-page-little {
+        font-size: 30pt;
+    }
+    .item-page-title {
+        width: 70%;
+        font-size: 36pt;
+    }
+}
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    a {
+        font-size: 18pt;
+    }
+    .item-page {
+        width: 590px;
+        padding: 0 80px 200px 80px;
+    }
+    .item-page-little {
+        font-size: 26pt;
+    }
+    .item-page-title {
+        width: 70%;
+        font-size: 32pt;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    a {
+        font-size: 16pt;
+    }
+    .item-page {
+        width: 500px;
+        padding: 0 50px 150px 50px;
+    }
+    .item-page-little {
+        font-size: 24pt;
+    }
+    .item-page-title {
+        width: 70%;
+        font-size: 28pt;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    body {
+        font-size: 12pt;
+    }
+    a {
+        font-size: 16pt;
+    }
+    .item-page {
+        position: relative;
+        width: 100%;
+        padding: 0 0 150px 0;
+    }
+    .item-page-little {
+        font-size: 20pt;
+    }
+    .item-page-title {
+        width: 70%;
+        font-size: 24pt;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+    body {
+        font-size: 10pt;
+    }
+    a {
+        font-size: 14pt
+    }
+    .item-page-little {
+        font-size: 16pt;
+    }
+    .item-page-title {
+        font-size: 18pt;
     }
 }
