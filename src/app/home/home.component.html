@@ -11,19 +11,18 @@
         <div class="categoryLine" data-cate="2"></div>
         <div class="categoryLine" data-cate="3"></div>
       </div>
-      <div (click)="goHome()" id="closePage" (click)="closeItem()">╳</div>
     </section>
 
     <section id="content">
 
       <div id="routeContainer" *ngIf="showItem" [@flyInOut]>
-        
         <router-outlet></router-outlet>
       </div>
       
       <div id="open-page-effect" class="page-effect"></div>
       <div id="close-page-effect" class="page-effect"></div>
       <div id="clickItemBan"></div>
+      <div (click)="goHome()" id="closePage" (click)="closeItem()">╳</div>
       <!--WEB-->
       <div id="category-0">
         <p class="category-title">Websites</p>

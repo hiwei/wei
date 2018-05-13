@@ -40,10 +40,8 @@ export class HomeComponent implements OnInit {
   }
   goLast() {
     window.addEventListener('popstate', function() {
-      $('#clickItemBan').hide();
-      $('#categoryLine-box').removeClass('fadeOutEffect').show();
-      $('#closePage').addClass('fadeOutEffect').fadeOut(1000);;
-      $('#open-page-effect').removeClass('openPageEffect');
+      $('#routeContainer').hide();
+      location.reload();
     });  
   }
   showItem: boolean = false;
@@ -58,7 +56,9 @@ export class HomeComponent implements OnInit {
   closeItem() {
     $('#clickItemBan').hide();
     this.showItem = false;
-    $('#categoryLine-box').removeClass('fadeOutEffect').show();
+    if($(window).width() > 1024) {
+      $('#categoryLine-box').removeClass('fadeOutEffect').show();
+    }
     $('#closePage').addClass('fadeOutEffect').fadeOut(1000);
     $('#open-page-effect').removeClass('openPageEffect');
     $('#close-page-effect').addClass('closePageEffect');

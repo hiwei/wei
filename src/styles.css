@@ -109,10 +109,8 @@ video {
     }
 }
 
-
 /* RWD */
 @media screen and (min-width: 1441px) and (max-width: 1680px) {
-
     .item-page {
         width: 690px;
         padding: 0 80px 200px 80px;
@@ -191,5 +189,20 @@ video {
     }
     .item-page-title {
         font-size: 18pt;
+    }
+}
+
+/* VIDEO */
+@media screen and (min-width: 641px) {
+    .demo-vid-little {
+        display: none;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 640px) {
+    .demo-vid-big {
+        display: none;
+    }
+    .demo-vid-little {
+        display: block;
     }
 }
